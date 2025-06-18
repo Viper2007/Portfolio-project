@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clean Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 id="site-title">John Doe</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#recommendations">Recommendations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="https://via.placeholder.com/150" alt="Profile" id="profile-pic"/>
+    <p>Hello! I'm John Doe, a front-end developer with a passion for building accessible and responsive websites.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+      <p>HTML</p>
+    </div>
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+      <p>CSS</p>
+    </div>
+    <div class="skill">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+      <p>JavaScript</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Portfolio Website – Built using HTML, CSS, and JavaScript</li>
+      <li>Weather App – Real-time API integration</li>
+      <li>To-Do List – Dynamic task management with localStorage</li>
+    </ul>
+  </section>
+
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <ul id="rec-list">
+      <li>“John is a fantastic developer and team player!” – Jane Smith</li>
+      <li>“Always delivers high-quality work on time.” – Mark Lee</li>
+      <li>“Very dependable and creative.” – Rachel Adams</li>
+    </ul>
+
+    <form onsubmit="return addRecommendation();">
+      <input type="text" id="newRec" placeholder="Enter recommendation" required />
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <a href="#site-title" title="Home"><span class="home-icon">🏠</span></a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
